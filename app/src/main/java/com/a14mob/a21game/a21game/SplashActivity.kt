@@ -9,8 +9,8 @@ import android.widget.ImageView
 
 class SplashActivity : AppCompatActivity() {
 
-    private val SPLASH_DISPLAY_LENGTH = 1500L
-    private val SPLASH_DISPLAY_QTD = 2
+    private val SPLASH_DISPLAY_LENGTH = 1000L
+    private val SPLASH_DISPLAY_QTD = 5
     lateinit var ivLogo: ImageView
     private var vezes: Int = 0;
 
@@ -37,6 +37,8 @@ class SplashActivity : AppCompatActivity() {
         ivLogo!!.clearAnimation();
         ivLogo!!.startAnimation(animacao);
 
+
+        //SEMELHANTE A ASYNC TASK ANDROID
         Handler().postDelayed({
 
             if(vezes < SPLASH_DISPLAY_QTD){
