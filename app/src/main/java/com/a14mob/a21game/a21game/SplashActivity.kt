@@ -10,7 +10,7 @@ import android.widget.ImageView
 class SplashActivity : AppCompatActivity() {
 
     private val SPLASH_DISPLAY_LENGTH = 1000L
-    private val SPLASH_DISPLAY_QTD = 5
+    private val SPLASH_DISPLAY_QTD = 2
     lateinit var ivLogo: ImageView
     private var vezes: Int = 0;
 
